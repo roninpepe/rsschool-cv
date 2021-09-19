@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV: Pepe the Ronin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body style="font-family:'Sawarabi Gothic',sans-serif;max-width:900px;margin:0 auto">
+    <input type="checkbox" id="borgir" hidden>
+    <header>
+        <h1>
+            <label for="borgir" hidden>☰</label>
+            CV
+        </h1>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#me">Me</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Example</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+
+        <div id="bio">
+            <article id="me">
+                <h2>Me</h2>
+                <div style="text-align:center">
+                    <figure>
+                        <img alt="Me" src="./images/me.jpg" width="300">
+                        <figcaption style="text-align:right">
+                            <pre style="font-family:'Courier Prime',monospace">Autumn ends:<br>frogs settle down<br>into the earth.</pre>
+                        </figcaption>
+                    </figure>
+                    <h3>Pepe the Ronin</h3>
+                    <h4>Sad japanese frog, wannabe FE-dev</h4>
+                </div>
+            </article>
+            <article id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>Higher education: Belarusian National Technical University</li>
+                    <li>English: International House</li>
+                    <li>Self-education: textbooks, manuals, specs, lectures (CS50, freeCodeCamp, etc.), practice</li>
+                </ul>
+            </article>
+        </div>
+        <div id="abilities">
+            <article id="stack">
+                <h2>Stack</h2>
+                <section>
+                    <h3>Web</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS/SCSS</li>
+                        <li>SSI</li>
+                        <li>JS</li>
+                        <li>PHP</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>UIkit</li>
+                        <li>Milligram</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>XD</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>VS Code</li>
+                        <li>Notepad++</li>
+                        <li>Open Server</li>
+                        <li>webpack</li>
+                        <li>npm</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Web-servers</h3>
+                    <ul>
+                        <li>nginx</li>
+                        <li>Apache</li>
+                        <li>Node.js</li>
+                        <li>Icecast</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Virtualization</h3>
+                    <ul>
+                        <li>Docker</li>
+                        <li>VMWare</li>
+                        <li>Hyper-V</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>OS</h3>
+                    <ul>
+                        <li>Windows Server</li>
+                        <li>GNU/Linux</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Shell</h3>
+                    <ul>
+                        <li>PowerShell</li>
+                        <li>BASH</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>VCS</h3>
+                    <ul>
+                        <li>git</li>
+                    </ul>
+                </section>
+            </article>
+            <article id="skills">
+                <h2>Skills</h2>
+                <section>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Russian — native</li>
+                        <li>Belarusian — native</li>
+                        <li>English — intermediate (B1)</li>
+                        <li>Ukrainian — intermediate</li>
+                        <li>Polish — basic</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Graphics</h3>
+                    <ul>
+                        <li>Vector (Illustrator, InkScape)</li>
+                        <li>Raster (Photoshop, Paint.Net, GIMP)</li>
+                        <li>Drawing (CADs)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Art</h3>
+                    <ul>
+                        <li>Music (guitar)</li>
+                        <li>Illustration</li>
+                        <li>Photo</li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+        <div id="example">
+            <article id="code">
+                <h2>Example</h2>
+                <pre><code class="js">function getParticipants(handshakes){
+n=1
+while(n*(n-1)/2&lt;handshakes){n++}
+return n
+}</code></pre>
+            </article>
+        </div>
+        <div id="social">
+            <article id="links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="https://github.com/roninpepe">GitHub</a></li>
+                    <li><a href="https://codewars.com/users/roninpepe">Codewars</a></li>
+                </ul>
+            </article>
+            <article id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Discord: <a href="https://discord.com/users/876862292396998698">Pepe the Ronin#1326</a></li>
+                    <li>E-mail: <a href="mailto:roninpepe@protonmail.com">roninpepe@protonmail.com</a></li>
+                    <li>XMPP: <a href="xmpp:roninpepe@404.city">roninpepe@404.city</a></li>
+                </ul>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <a href="https://rs.school/js/" title="The Rolling Scopes School JS" style="display:inline-block">
+            <object data="https://rs.school/images/rs_school_js.svg" type="image/svg+xml" width="230" style="pointer-events:none">
+                The Rolling Scopes School JS
+            </object>
+        </a>
+        <span>2021 © <a href="https://github.com/roninpepe" title="GitHub">
+            Pepe the Ronin
+        </a></span>
+    </footer>
+  </body>
+</html>
