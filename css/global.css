@@ -1,0 +1,102 @@
+@media screen and (max-width: 420px) {
+    header{
+        left: 0;
+        right: 0;
+        background: inherit;
+        box-shadow: 0 -15px 10px 10px;
+        z-index: 1;
+    }
+    aside{
+        width: 100%!important;
+        bottom: 0;
+        right: -100%;
+        background: inherit;
+        text-align: center;
+        box-shadow: 15px 0 10px 10px;
+        transition: right .2s;
+    }
+    main,footer{
+        margin: 0!important;
+    }
+
+    header label{
+        display: block;
+    }
+
+    #borgir:checked~header label:after{
+        content: "✖";
+    }
+    #borgir:checked~aside{
+        right: 0;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+    background: #fff;
+    color: #555;
+}
+body {
+    background: inherit;
+}
+a{
+    color: initial;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+figure{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    padding: 0 5px;
+}
+aside{
+    position: fixed;
+    top: 90px;
+    width: 70px;
+}
+main{
+    margin: 0 0 0 70px;
+    padding: 0 10px;
+}
+footer{
+    margin: 0 0 0 70px;
+    padding: 70px 10px 0;
+}
+
+header label{
+    float: right;
+    width: 50px;
+    text-align: center;
+}
+header label:after{
+    content: "☰";
+}
+nav a{
+    display: block;
+    padding: 5px;
+}
+article{
+    padding: 70px 0 0;
+}
+main section{
+    display: inline-block;
+    margin: 10px 20px 0;
+    vertical-align: top;
+}
+footer>span{
+    margin: 0 0 0 70px;
+    white-space: nowrap;
+}
